@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Raleway:700');
+/* Basic styles */
+body{
+    font-family: 'Raleway', sans-serif;
+    color: #fffefe;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.36;
+    text-align: center;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a, button{
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+h2{
+    color:  #222222;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* Typography */
+
+
+/* Additional styles or modificators */
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+/* Grid */
+
+.full-container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.el-container{
+    margin: auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1100px;
+}
+.row{
+    margin: 0 -15px;
+}
+
+.row:before,
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[class^="col"],
+[class*="col"]{
+    float: left;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box
+}
+
+.col-1{
+    width: 8.3333%;
+}
+
+.col-2{
+    width: 16.6666%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.3333%;
+}
+
+.col-5{
+    width: 41.6665%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.3333%;
+}
+
+.col-8{
+    width: 66.6666%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.3333%;
+}
+
+.col-11{
+    width: 91.6666%
+}
+
+.col-12{
+    width: 100%;
+}
+
+.col-offset-1{
+    margin-left: 8.3333%;
+}
+
+.col-offset-2{
+    margin-left: 16.6666%;
+}
+
+.col-offset-3{
+    margin-left: 25%;
+}
+
+.col-offset-4{
+    margin-left: 33.3333%;
+}
+
+.col-offset-5{
+    margin-left: 41.6665%;
+}
+
+.col-offset-6{
+    margin-left: 50%;
+}
+
+.col-offset-7{
+    margin-left: 58.3333%;
+}
+
+.col-offset-8{
+    margin-left: 66.6666%;
+}
+
+.col-offset-9{
+    margin-left: 75%;
+}
+
+.col-offset-10{
+    margin-left: 83.3333%;
+}
+
+.col-offset-11{
+    margin-left: 91.6666%
+}
+
+.el-header{
+    position: relative;
+    color: #fffefe;
+    background: #02496a url(../img/hero.png) no-repeat center center;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;   
+}
+.el-container-logo{
+    float: left;
+    padding-top: 40px;
+}
+.el-container-nav{
+    margin-top: 13px;
+    padding-top: 30px;
+    float: right;
+    list-style: none;   
+}
+
+.el-container-nav li {
+    float: left;
+    padding-left: 38px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.el-container-nav a{
+    position: relative;
+    text-decoration: none;
+    color: #fffefe;
+    font-size: 13.92px;
+    font-weight: 500;
+}
+
+.el-container-nav a:after{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    content: '';
+    transition: width 0.5s ease;
+    
+}
+.el-container-nav a:hover:after{
+    width: 100%;
+}
+.el-info--life h1{
+    position: relative;
+    padding-top: 230px;
+    padding-bottom: 98px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.el-info--life h1:after{
+    position: absolute;
+    content: '';
+    width: 86px;
+    top: 90%;
+    left: 45%;
+    border: 2px solid #fff;   ;
+}
+.el-info--life p{
+    font-family: 'Lato';
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-bottom: 395px;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.el-header__link{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 49%;
+    bottom: 45px;
+    display: block;
+    transform: translateX(-50%);  
+}
+.el-header__link:hover{
+    opacity: 0.6;
+}
+.el-services{
+    font-family: 'Lato';
+    color: #222222;
+    text-align: center;
+}
+.el-info--services{
+    position: relative;
+    padding-top: 116px;
+    padding-bottom: 156px;
+}
+.el-info--services:after{
+    position: absolute;
+    content: '';
+    width: 86px;
+    top: 73%;
+    left: 45%;
+    border: 2px solid #222222;   
+}
+.el-services h3{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+.el-services p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+    padding: 0 15px 115px;
+}
+.el-container-image{
+    vertical-align: middle;
+    height: 160px;
+}
+.el-container-services img{
+    display: inline-block;
+    text-align: center;
+}
+.el-container-services img:hover{
+    opacity: 0.7;
+}
+
+.el-aboutus{
+    position: relative;
+    font-family: 'Lato';
+    color:  #ffffff;
+    font-size: 22px; 
+    font-weight: 100;
+    line-height: 1.27;
+    text-align: left;
+    background: #02496a url(../img/Rectangle3.png) no-repeat center center;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;   
+}
+.el-aboutus h2{
+    margin: 0;
+    padding-top: 130px;
+    color:  #ffffff;
+    font-size: 45px;
+    font-weight: 400;
+    transform: scaleY(1.0092);
+}
+
+.el-aboutus a{
+    padding-bottom: 115px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    text-decoration: underline;
+}
+
+.el-aboutus a:hover{
+    text-decoration: none;
+    color: #ad858d;
+}
+
+.el-aboutus p{
+    margin: 0;
+    padding-bottom: 70px;
+}
+.col-offset-2 img{
+    padding-top: 75px;
+}
+.col-offset-2 img:hover{
+    opacity: 0.7;
+}
+
+.el-info--work{
+    position: relative;
+    padding-top: 118px;
+    padding-bottom: 165px;
+}
+
+.el-info--work:after{
+    position: absolute;
+    content: '';
+    width: 86px;
+    top: 73%;
+    left: 45%;
+    border: 2px solid #222222;   
+}
+.el-container-workwork{
+    padding-bottom: 85px;
+}
+.el-container--more{
+    margin-bottom: 75px;
+}
+.el-container-workimage img:hover{
+    opacity: .8;
+}
+.el-container-work__btn{
+    padding: 15px 10px;
+    color: #222222;
+    border: 2px solid #222222;
+    display: block;
+    background: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+}
+.el-container-work__btn:hover{
+    background: #222222;
+    color: #ffffff;
+    }
